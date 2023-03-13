@@ -47,7 +47,9 @@ body, html{
     section{
         border-radius: 0 0 30px 30px;
     }
-
+    footer{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 501px) {
@@ -67,11 +69,15 @@ body, html{
     article{
         width: 375px;
     }
+    footer{
+        position: absolute;
+        bottom: 250px;
+    }
 }
 
 main{
     display: flex;
-    border: 1px solid black;
+    box-shadow: 2px 4px 20px #00000025;
 }
 
 section{
@@ -168,3 +174,4 @@ input{
 input:hover{
     background-color: var(--Light_royal-blue);
 }
+
