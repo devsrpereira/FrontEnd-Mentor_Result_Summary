@@ -31,13 +31,47 @@
 body, html{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        width: 375px;
+    }
+    section{
+        border-radius: 0 0 30px 30px;
+    }
+
+}
+
+@media screen and (min-width: 501px) {
+    body{
+        flex-direction: row;
+    }
+    main{
+        flex-direction: row;
+        width: calc(375px * 2);
+        border-radius: 30px;
+    }
+    section{
+        justify-content: center;
+        border-radius: 30px;
+        width: 375px;
+    }
+    article{
+        width: 375px;
+    }
 }
 
 main{
     display: flex;
-    flex-direction: column;
-    
-    width: 375px;
+    border: 1px solid black;
 }
 
 section{
@@ -50,8 +84,6 @@ section{
 
     background-image: linear-gradient(to bottom, var(--Light_slate-blue), var(--Light_royal-blue));
     color: #ffffffaf;
-
-    border-radius: 0 0 30px 30px;
 }
 .result{
     display: flex;
