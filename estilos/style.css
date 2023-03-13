@@ -43,16 +43,14 @@ body, html{
         flex-direction: column;
         width: 100%;
         max-width: 425px;
+        height: 100vh;
+        border: 1px solid black;
     }
     section{
+        height: 40vh;
         border-radius: 0 0 30px 30px;
-    }
-    .second{
-        width: 80%;
-        padding-left: 10px;
-    }
-    .score{
-        width: 80px;
+        justify-content: center;
+        padding: 3vh;
     }
     footer{
         display: none;
@@ -75,23 +73,16 @@ body, html{
         justify-content: center;
         border-radius: 30px;
         width: 375px;
+        padding: 30px;
     }
+    
     article{
         width: 375px;
-    }
-    .second{
-        width: 65%;
-        padding-left: 10px;
-    }
-    .score{
-        width: 70px;
     }
     footer{
         position: absolute;
         bottom: 3vh;
     }
-    
-    
 }
 
 main{
@@ -104,7 +95,7 @@ section{
     align-items: center;
     gap: 20px;
     text-align: center;
-    padding: 30px;
+    
 
     background-image: linear-gradient(to bottom, var(--Light_slate-blue), var(--Light_royal-blue));
     color: #ffffffaf;
@@ -134,15 +125,15 @@ section{
     font-weight: 700;
 }
 .txtmsg{
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 article{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 2vh;
 
-    padding: 30px;
+    padding: 3vh;
     font-weight: 700;
 }
 article h3{
@@ -151,7 +142,7 @@ article h3{
 article div{
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px;
+    padding: 2vh 1vh;
     border-radius: 15px;
 }
 .reaction{
@@ -170,8 +161,15 @@ article div{
     background-color: #2e2be90f;
     color: var(--Cobalt_blue);
 }
+.second{
+    padding-left: 10px;
+}
 .score{
     color: #1f387e90;
+    width: 80%;
+    justify-items: flex-end;
+    text-align: right;
+    padding-right: 10px;
 }
 strong{
     color: #1f387ecc;
@@ -179,10 +177,10 @@ strong{
 
 input{
     background-color: var(--Dark_gray_blue);
-    padding: 15px;
+    padding: 2vh;
     border-radius: 30px;
     color: var(--Pale_blue);
-    margin-top: 10px;
+    margin-top: 1vh;
     border: none;
     cursor: pointer;
 }
